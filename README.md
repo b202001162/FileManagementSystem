@@ -4,7 +4,7 @@ A simple file management system implemented in C that allows you to create, mana
 
 ## Overview
 
-A file system is a collection of files and directories organized in a hierarchical structure. This file management system is designed with the following constraints:
+A file system is a collection of files and directories organized hierarchically. This file management system is designed with the following constraints:
 
 - Supports up to 100 files.
 - Maximum file size is 10 KB, spanning up to ten blocks.
@@ -58,15 +58,28 @@ A file system is a collection of files and directories organized in a hierarchic
   - Checks if the given file name already exists.
   - Initializes the block list for the new file.
   - Takes user input for file data and updates block usage and structures.
+-  **Screenshot**
+  ![image](https://github.com/b202001162/FileManagementSystem/assets/86399274/7f4f6714-c306-4a3a-9a0a-c8eba2abeb51)
+
+### 3. List all files
+
+- **Prototype:** `void listFiles();`
+- **Function Description:**
+  - Lists all the available files
+- **Screenshot**
+![](https://github.com/b202001162/FileManagementSystem/blob/master/out_List_files.png?raw=true)
+
   
-### 3. Read a file
+### 4. Read a file
 
 - **Prototype:** `void readFile();`
 - **Function Description:**
   - Takes a file name as user input.
   - Searches for the file and prints filled blocks' data.
+- **Screenshot**
+![image](https://github.com/b202001162/FileManagementSystem/blob/master/out_Read_file.png?raw=true)
 
-### 4. Edit a file
+### 5. Edit a file
 
 - **Prototype:** `void editFile();`
 - **Function Description:**
@@ -74,23 +87,15 @@ A file system is a collection of files and directories organized in a hierarchic
   - Searches for the file and provides editing options.
   - Allows editing or removing blocks.
   - Updates free blocks, filled blocks, and structures.
+- **Screenshot**
+![](https://github.com/b202001162/FileManagementSystem/blob/master/out_edit_file.png?raw=true)
 
-### 5. Delete a file
+### 6. Delete a file
 
 - **Prototype:** `void deleteFile();`
 - **Function Description:**
   - Takes a file name as user input.
   - Searches for the file and deletes it.
   - Updates free blocks, data blocks, and structures.
-
-## Getting Started
-
-To use this file management system, follow these steps:
-
-1. Clone this repository.
-2. Compile the source code using a C compiler.
-3. Run the compiled executable.
-4. Follow the on-screen instructions to create, manage, and access files.
----
-
-We hope this README helps you get started with understanding and using our simple file management system.
+- **Screenshot**
+![](https://github.com/b202001162/FileManagementSystem/blob/master/out_delete_file.png?raw=true)
